@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Проекты</title>
-  <script src="emerge.js"></script>
-  <script src="jquery.min.javascript"></script>
+  <link rel="stylesheet" href="CSS/jquery.mCustomScrollbar.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="JS/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="JS/emerge.js"></script>
   <style>
   	body{
   		background-color: #2f4557;
   	}
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
     .StyleText {
 	    color: #ffffff;
 	    font-family: Comfortaa;
@@ -58,5 +64,14 @@
         <center><a href="index.html" class="GeneralMenu"><- На главную страницу</a></center>
     <hr size="2" width="50%" align="center" color="black">
   </div>
+<script>
+    (function ($) {
+      $(window).on("load", function () {
+        $('body').mCustomScrollbar({
+          theme: "dark-thin"
+        });
+      });
+    })(jQuery);
+</script>
 </body>
 </html>
