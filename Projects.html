@@ -20,6 +20,7 @@
 	    font-family: Comfortaa;
 	    font-weight: bold;
 	    text-decoration: none;
+      display: none;
     }
     .GeneralMenu {
       margin-top: 50%;
@@ -28,6 +29,7 @@
       font-family: Comfortaa;
       font-weight: bold;
       text-decoration: none;
+      display: none
     }
   </style>
 </head>
@@ -65,6 +67,10 @@
     <hr size="2" width="50%" align="center" color="black">
   </div>
 <script>
+  $(".GeneralMenu").fadeIn();
+  $(".StyleText").fadeIn();
+  $(".GeneralMenu").fadeIn(7000);
+  $(".StyleText").fadeIn(1500);
     (function ($) {
       $(window).on("load", function () {
         $('body').mCustomScrollbar({
